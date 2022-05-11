@@ -1,7 +1,7 @@
 # Wordpress_Perceval
 
 ## Docker-compose.yml :
-'''
+
 version: '3'  
 services:  
   db:  
@@ -16,26 +16,24 @@ services:
       MYSQL_PASSWORD: wordpress  
       
   wordpress:  
-    depends_on:                            
-      - db
-    image: wordpress:latest                
-   ports:
-      - "8000:80"
-    restart: always                        
-    environment:                          
-      WORDPRESS_DB_HOST: db:3306
-      WORDPRESS_DB_USER: wordpress
-      WORDPRESS_DB_PASSWORD: wordpress
-      WORDPRESS_DB_NAME: wordpress
- volumes:                                  
-  db_data: {}
-'''
+    depends_on:  
+      - db  
+    image: wordpress:latest  
+   ports:  
+      - "8000:80"  
+    restart: always  
+    environment:  
+      WORDPRESS_DB_HOST: db:3306  
+      WORDPRESS_DB_USER: wordpress  
+      WORDPRESS_DB_PASSWORD: wordpress  
+      WORDPRESS_DB_NAME: wordpress  
+ volumes:  
+  db_data: {}  
+
 ## Informations concernant les commandes : 
 
-image = Image source du container
-volumes = Point de Montage entre le container et l'hôte
-restart = Comportement en cas d'arrêt du processus
-environment = Variables d'environnement
-depends_on = Depend de "db"
-
-
+image = Image source du container  
+volumes = Point de Montage entre le container et l'hôte  
+restart = Comportement en cas d'arrêt du processus  
+environment = Variables d'environnement  
+depends_on = Depend de "db"  
