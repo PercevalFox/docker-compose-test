@@ -2,7 +2,7 @@
 
 ## Docker-compose.yml :
 
-version: '3'  
+>>version: '3'  
 services:  
   db:  
     image: mysql:5.7  
