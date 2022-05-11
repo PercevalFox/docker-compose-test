@@ -35,4 +35,4 @@ image = Image source du container
 volumes = Point de Montage entre le container et l'hôte  
 restart = Comportement en cas d'arrêt du processus  
 environment = Variables d'environnement  
-depends_on = Depend de "db"  
+depends_on = Depend d'un service 
