@@ -1,7 +1,7 @@
 # Wordpress_Perceval
 
 ## Docker-compose.yml :
-
+'''
 version: '3'
 services:
   db:
@@ -29,7 +29,7 @@ services:
       WORDPRESS_DB_NAME: wordpress
  volumes:                                  
   db_data: {}
-
+'''
 ## Informations concernant les commandes : 
 
 image = Image source du container
