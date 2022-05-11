@@ -2,7 +2,7 @@
 
 ## Docker-compose.yml :
 
->>version: '3'  
+>version: '3'  
 services:  
   db:  
     image: mysql:5.7  
@@ -15,7 +15,7 @@ services:
      MYSQL_USER: wordpress  
       MYSQL_PASSWORD: wordpress  
       
-  wordpress:  
+ > wordpress:  
     depends_on:  
       - db  
     image: wordpress:latest  
@@ -27,7 +27,7 @@ services:
       WORDPRESS_DB_USER: wordpress  
       WORDPRESS_DB_PASSWORD: wordpress  
       WORDPRESS_DB_NAME: wordpress  
- volumes:  
+> volumes:  
   db_data: {}  
 
 ## Informations concernant les commandes : 
