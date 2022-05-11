@@ -14,7 +14,6 @@ services:
       MYSQL_DATABASE: wordpress  
      MYSQL_USER: wordpress  
       MYSQL_PASSWORD: wordpress  
-      
  > wordpress:  
     depends_on:  
       - db  
